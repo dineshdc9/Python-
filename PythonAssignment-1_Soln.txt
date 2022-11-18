@@ -1,0 +1,200 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+Ans.Because Python codes are not written in machine-readable(binary)language which makes it human readable, 
+    so Python programs need to be processed before machines can run them. 
+    Python is an interpreted language means that every time a program is run,
+    its interpreter runs through the code and translates it into machine-readable byte code
+
+
+Q2. Why is Python called a dynamically typed language?
+Ans.As We need not specify the type of variable while creating as 
+    the interpreter assigns variables a type at runtime based on the variable's value at the time if not specified.
+
+
+Q3. List some pros and cons of Python programming language?
+	Pros					Cons
+Beginner-friendly			Issues with design
+Large Community				Slower than compiled languages
+Flexible and Extensible			Security
+Extensive Libraries			Work Environment
+Embeddable				High memory consumption
+Highly Scalable				Dynamically-typed language
+IoT Opportunities			Complex multithreading
+Portable				Garbage collection leads to potential memory losses
+
+
+Q4. In what all domains can we use Python?
+Ans.Web development,AI and Data Science,OS development,Scientific programming,Gaming,,Cyber and Network Security etc.
+
+
+Q5. What are variable and how can we declare them?
+Ans.Variables are containers for storing data values.Python does not have a specific command for declaring a variable, it can be
+    created the moment you first assign a value to it.
+
+
+Q6. How can we take an input from the user in Python?
+Ans.We use the input() method.Python stops executing when it comes to the input() function, 
+    and continues when the user has given some input.
+eg.	username = input("Enter username:")
+   	print("Username is: " + username)
+
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+Ans.  a string
+
+
+Q8. What is type casting?
+Ans.The conversion of one data type into the other data type is known as type casting in python
+eg. 	string into integer
+	number = int("value")
+
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+Ans. Yes it can be done using Using split() method, it is useful for getting multiple inputs from users at a time
+     syntax:input().split(separator, maxsplit)
+eg.	# taking two inputs at a time
+	x, y = input("Enter two values: ").split()
+	print("Number of boys: ", x)
+	print("Number of girls: ", y)
+	print()
+
+
+Q10. What are keywords?
+Ans.Python keywords are unique words reserved with defined meanings and functions that we can only apply for those functions. 
+    we'll never need to import any keyword into the program because they're permanently present.
+    eg.and,is,for,if,not,or,else etc.
+
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+Ans. No we cannot use keywords as variable names. It's because keywords have predefined meanings and there will be confusion.
+
+
+Q12. What is indentation? What's the use of indentaion in Python?
+Ans. Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in 
+     code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
+
+
+Q13. How can we throw some output in Python?
+Ans. Using print function
+
+
+Q14. What are operators in Python?
+Ans. In Python, operators are special symbols that designate that some sort of computation should be performed. 
+     The values that an operator acts on are called operands.
+     eg.>>> a = 10
+	>>> b = 20
+	>>> a + b
+	30
+	In this case, the + operator adds the operands a and b together
+Types:Arithmetic,Comparison,Assignment,Logical etc.
+
+
+Q15. What is difference between / and // operators?
+Ans. / corresponds to division eg. 5/2 =2.5 whereas
+    // corresponds to floor division eg. 5//2=2
+
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+Ans.	a="iNeuroniNeuroniNeuroniNeuron"
+	print(a)
+
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans.num = int(input("Enter a number: "))  
+    if (num % 2) == 0:  
+       print("{0} is Even number".format(num))  
+   else:  
+       print("{0} is Odd number".format(num)) 
+
+
+Q18. What are boolean operator?
+Ans. The logical operators and, or and not are also referred to as boolean operators. 
+     While and as well as or operator needs two operands, which may evaluate to true or false, 
+     not operator needs one operand evaluating to true or false.
+Boolean and operator returns true if both operands return true.
+Boolean or operator returns true if any one operand is true
+The not operator returns true if its operand is a false expression and returns false if it is true.
+
+
+Q19. What will the output of the following?
+```
+1 or 0
+
+0 and 0
+
+True and False and True
+
+1 or 0 or 0
+```
+Ans.True
+    True
+    False
+    True
+
+
+Q20. 
+Ans.A conditional statement is used to handle conditions in python program. 
+These statements guide the program while making decisions based on the conditions encountered by the program.
+Python has 3 key Conditional Statements that you should know:
+if statement
+if-else statement
+if-elif-else ladder
+
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+Ans.if statement is used to determine whether a block of code will be executed or not. Meaning if the program finds the 
+    condition defined in the if statement to be true, it will go ahead and execute the code block inside the if statement
+The else statement works in conjuncture with the if statement to execute a code block when the defined if condition is false.
+The elif statement is used to check for multiple conditions and execute the code block within if any of the conditions evaluate to be true.
+the elif statement is similar to the else statement in the context that it is optional but unlike the else statement, 
+there can be multiple elif statements in a code block following an if statement.
+
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+Ans.
+      age = int(input('Enter your age in years: '))
+      if age >= 18:
+         print("I can vote")
+      else:
+         print("I can't vote")
+
+
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans. myList = [12, 75, 150, 180, 145, 525, 50]
+     sum(num for num in myList if not num%2)
+
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+Ans. 
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print("The largest number is", largest)
+
+
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
